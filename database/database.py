@@ -11,7 +11,7 @@ def save_to_database():
     Salva os dados da camada gold no banco de dados PostgreSQL,
     utilizando SQLAlchemy para a conexão e pandas para a inserção dos dados.
     Configura os parâmetros de conexão com o banco de dados (usuário, senha, host, porta, nome do banco).
-    Lê o arquivo CSV da camada gold e insere os dados na tabela 'porto_data', sobrescrevendo a tabela se ela já existir.
+    Lê o arquivo CSV da camada gold e insere os dados na tabela 'porto_data', adicionando novos registros sem substituir os existentes.
     
     Returns: None
     """
